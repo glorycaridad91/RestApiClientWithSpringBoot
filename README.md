@@ -9,7 +9,7 @@ Basic Rest API with Java, Spring Boot using Docker, Spring Data JPA, MySQL, Lomb
 
 # 1. Rest API Client
 
-Rest API that has the functionalities of registering, updating, consulting, and deleting clients. It has a basic authentication mechanism to allow any user or client to call them.
+Rest API that has the functionalities of registering, updating, consulting, and deleting clients.
 With the following structure:
 
 ![alt text](src/main/resources/structure.png)
