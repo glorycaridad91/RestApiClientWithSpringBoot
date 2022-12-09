@@ -15,11 +15,11 @@ public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int clientID;
-    private String nombre;
-    private String apellidos;
-    private String nombreRazonSocial;
-    private int idEmpresa;
-    private String correo;
-    private String direccion;
-    private String telefono;
+    private String name;
+    private String lastname;
+    private String companyName;
+    private int idCompany;
+    private String email;
+    private String address;
+    private String phone;
 }
