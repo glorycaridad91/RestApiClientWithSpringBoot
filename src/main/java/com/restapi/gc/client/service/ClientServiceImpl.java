@@ -23,13 +23,13 @@ public class ClientServiceImpl implements ClientService {
     public Client updateClient(Client newClient) {
         Optional<Client> client2 = clientRepository.findById(newClient.getClientID());
         client2.get().setClientID(newClient.getClientID());
-        client2.get().setNombre(newClient.getNombre());
-        client2.get().setApellidos(newClient.getApellidos());
-        client2.get().setNombreRazonSocial(newClient.getNombreRazonSocial());
-        client2.get().setIdEmpresa(newClient.getIdEmpresa());
-        client2.get().setCorreo(newClient.getCorreo());
-        client2.get().setDireccion(newClient.getDireccion());
-        client2.get().setTelefono(newClient.getTelefono());
+        client2.get().setName(newClient.getName());
+        client2.get().setLastname(newClient.getLastname());
+        client2.get().setCompanyName(newClient.getCompanyName());
+        client2.get().setIdCompany(newClient.getIdCompany());
+        client2.get().setEmail(newClient.getEmail());
+        client2.get().setAddress(newClient.getAddress());
+        client2.get().setPhone(newClient.getPhone());
         return clientRepository.save(client2.get());
     }
 

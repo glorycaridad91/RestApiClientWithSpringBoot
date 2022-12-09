@@ -46,8 +46,9 @@ It is built with the following technology:
 	environment:
 		- MYSQL_DATABASE=client_db
 		- MYSQL_USER=client_user
-		- MYSQL_PASSWORD=An0thrS3crt
+		- MYSQL_PASSWORD=pass
 		- MYSQL_ROOT_PASSWORD=mauFJcuf5dhRMQrxy
+        - MYSQL_ROOT_HOST=%
 	volumes:
 		- mysql-data:/var/lib/mysql
 	ports:
@@ -87,7 +88,7 @@ It is built with the following technology:
 	> Access Db: 
 	
 		Server name: MySQL
-		DB credentials:	client_user and An0thrS3crt
+		DB credentials:	client_user and pass
 
 
 7- Para detener los contenedores  
